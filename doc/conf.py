@@ -31,7 +31,7 @@ myst_heading_anchors = 4
 
 # -- Options for sitemap -----------------------------------------------------
 # https://sphinx-sitemap.readthedocs.io/en/latest/getting-started.html
-html_baseurl = 'https://zeissiqs.github.io/gom-software-python-api/2022/'
+html_baseurl = 'https://zeiss.github.io/gom-software-python-api/2022/'
 sitemap_url_scheme = "{link}"
 
 # -- Options for HTML output -------------------------------------------------
