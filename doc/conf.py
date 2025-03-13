@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Add-On Documentation'
-copyright = '2023, Carl Zeiss GOM Metrology GmbH'
+copyright = '2025, Carl Zeiss GOM Metrology GmbH'
 author = 'Carl Zeiss GOM Metrology GmbH'
 
 # -- General configuration ---------------------------------------------------
@@ -31,7 +31,7 @@ myst_heading_anchors = 4
 
 # -- Options for sitemap -----------------------------------------------------
 # https://sphinx-sitemap.readthedocs.io/en/latest/getting-started.html
-html_baseurl = 'https://zeissiqs.github.io/gom-software-python-api/2022/'
+html_baseurl = 'https://zeiss.github.io/gom-software-python-api/2022/'
 sitemap_url_scheme = "{link}"
 
 # -- Options for HTML output -------------------------------------------------
