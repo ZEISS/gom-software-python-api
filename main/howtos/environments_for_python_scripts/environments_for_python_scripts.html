@@ -1,22 +1,22 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" type="image/png" href="../../_static/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Environments for python scripts &mdash; Add-On Documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_zeiss.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme_zeiss.css?v=05bbff2e" />
 
   
     <link rel="canonical" href="https://zeiss.github.io/gom-software-python-api/2022/howtos/environments_for_python_scripts/environments_for_python_scripts.html" />
-      <script src="../../_static/jquery.js"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-      <script src="../../_static/doctools.js"></script>
-      <script src="../../_static/sphinx_highlight.js"></script>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -117,7 +117,7 @@
            <div itemprop="articleBody">
              
   <section id="environments-for-python-scripts">
-<h1>Environments for python scripts<a class="headerlink" href="#environments-for-python-scripts" title="Permalink to this heading"></a></h1>
+<h1>Environments for python scripts<a class="headerlink" href="#environments-for-python-scripts" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Script environments is available since software version 2022, revision 147326.</p>
@@ -127,7 +127,7 @@
 <p>New package with only scripts, which are not in environment, can not be created any more. Previous packages without environment can still be installed and executed, but can not be edited. If you want to export only scripts, please use “Export Script” (RMB on the script to export) or create a script environment and add the script in it.</p>
 </div>
 <section id="creating-an-environment-in-the-script-editor">
-<h2>Creating an environment in the script editor<a class="headerlink" href="#creating-an-environment-in-the-script-editor" title="Permalink to this heading"></a></h2>
+<h2>Creating an environment in the script editor<a class="headerlink" href="#creating-an-environment-in-the-script-editor" title="Link to this heading"></a></h2>
 <ul>
 <li><p>RMB (or Ctrl+E) on the Public/User-defined scripts &gt; New Environment</p></li>
 <li><p>Each created environment contains a “modules” folder and a “modules.json” file in the “modules” folder.</p>
@@ -136,9 +136,9 @@
 </ul>
 </section>
 <section id="install-uninstall-python-packages">
-<h2>Install / uninstall python packages<a class="headerlink" href="#install-uninstall-python-packages" title="Permalink to this heading"></a></h2>
+<h2>Install / uninstall python packages<a class="headerlink" href="#install-uninstall-python-packages" title="Link to this heading"></a></h2>
 <section id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h3>
+<h3>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h3>
 <ul>
 <li><p>To install python packages to the created environment path: RMB on ①the environment folder or ②modules folder or ③modules.json file &gt; Install Python Package</p>
 <p><img alt="" src="../../_images/explorer.png" /></p>
@@ -169,7 +169,7 @@
 </ul>
 </section>
 <section id="uninstallation">
-<h3>Uninstallation<a class="headerlink" href="#uninstallation" title="Permalink to this heading"></a></h3>
+<h3>Uninstallation<a class="headerlink" href="#uninstallation" title="Link to this heading"></a></h3>
 <ul>
 <li><p>RMB on a python package that should be removed &gt; Uninstall Python Package</p></li>
 <li><p>The explorer of the script editor and “modules.json” file are updated after uninstallation.</p>
@@ -179,7 +179,7 @@
 </section>
 </section>
 <section id="writing-and-running-a-script-in-the-environment">
-<h2>Writing and running a script in the environment<a class="headerlink" href="#writing-and-running-a-script-in-the-environment" title="Permalink to this heading"></a></h2>
+<h2>Writing and running a script in the environment<a class="headerlink" href="#writing-and-running-a-script-in-the-environment" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>To create a script in the created environment: RMB (or Ctrl+N) on the environment folder &gt; New Script</p></li>
 <li><p>Scripts in a script environments can import only</p>
@@ -191,7 +191,7 @@
 </ul>
 </section>
 <section id="editing-modules-json-file">
-<h2>Editing “modules.json” file<a class="headerlink" href="#editing-modules-json-file" title="Permalink to this heading"></a></h2>
+<h2>Editing “modules.json” file<a class="headerlink" href="#editing-modules-json-file" title="Link to this heading"></a></h2>
 <ul>
 <li><p>“modules.json” file can be edited in the script editor.</p></li>
 <li><p>“wheelsfrom”: “local”:  When creating a package that contains this environment, all wheel files of the required python packages for this environment are packaged together. When this environment being imported, required python packages are installed from the contained wheel files. Importing of this environment can be done offline.</p></li>
@@ -201,7 +201,7 @@
 </ul>
 </section>
 <section id="creating-a-package-that-contains-environments">
-<h2>Creating a package that contains environments<a class="headerlink" href="#creating-a-package-that-contains-environments" title="Permalink to this heading"></a></h2>
+<h2>Creating a package that contains environments<a class="headerlink" href="#creating-a-package-that-contains-environments" title="Link to this heading"></a></h2>
 <ul>
 <li><p>Go to “Create Package” dialog.</p>
 <p><img alt="" src="../../_images/go_to_create_package.png" /></p>
@@ -213,7 +213,7 @@
 </ul>
 </section>
 <section id="editing-the-package-that-contains-only-script-environments">
-<h2>Editing the package that contains only script environments<a class="headerlink" href="#editing-the-package-that-contains-only-script-environments" title="Permalink to this heading"></a></h2>
+<h2>Editing the package that contains only script environments<a class="headerlink" href="#editing-the-package-that-contains-only-script-environments" title="Link to this heading"></a></h2>
 <ul>
 <li><p>When editing package in the script editor, python packages can be installed and uninstalled in the environment.</p>
 <p><img alt="" src="../../_images/edit_package.gif" /></p>
@@ -225,7 +225,7 @@
 </ul>
 </section>
 <section id="editing-the-package-that-contains-contents-not-in-a-script-environment">
-<h2>Editing the package that contains contents not in a script environment<a class="headerlink" href="#editing-the-package-that-contains-contents-not-in-a-script-environment" title="Permalink to this heading"></a></h2>
+<h2>Editing the package that contains contents not in a script environment<a class="headerlink" href="#editing-the-package-that-contains-contents-not-in-a-script-environment" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>Packages that contain contents not in a script environment are called old-school packages.</p></li>
 <li><p>Old-school packages still exist and should be able to execute.</p></li>
@@ -234,11 +234,11 @@
 <li><p>The python packages contained in the old-school package would be installed in the script environment automatically, too.</p></li>
 </ul>
 <section id="script-editor">
-<h3>Script editor<a class="headerlink" href="#script-editor" title="Permalink to this heading"></a></h3>
+<h3>Script editor<a class="headerlink" href="#script-editor" title="Link to this heading"></a></h3>
 <p><img alt="" src="../../_images/script_editor.png" /></p>
 </section>
 <section id="package-manager">
-<h3>Package manager<a class="headerlink" href="#package-manager" title="Permalink to this heading"></a></h3>
+<h3>Package manager<a class="headerlink" href="#package-manager" title="Link to this heading"></a></h3>
 <p><img alt="" src="../../_images/in_package_manager.png" /></p>
 </section>
 </section>
@@ -266,7 +266,7 @@
   <div class="footer">
     <a href="https://www.gom.com/en/imprint" target="_blank" rel="noopener noreferrer">Imprint</a>
   </div>
-  <jinja2.runtime.BlockReference object at 0x7f99836c1c00>
+  <jinja2.runtime.BlockReference object at 0x7f2b87f92c40>
 
 
 </footer>
