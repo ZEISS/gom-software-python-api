@@ -1,24 +1,24 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta content="GOM Inspect 2022 Add-on Python API Specification" name="description" />
 <meta content="Metrology, GOM Inspect, Python API, GOM API, Scripting, Packages, Add-ons, Specification, Documentation" name="keywords" />
     <link rel="icon" sizes="16x16" type="image/png" href="../_static/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GOM Inspect Python API documentation &mdash; Add-On Documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme_zeiss.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme_zeiss.css?v=05bbff2e" />
 
   
     <link rel="canonical" href="https://zeiss.github.io/gom-software-python-api/2022/python_api/python_api.html" />
-      <script src="../_static/jquery.js"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-      <script src="../_static/doctools.js"></script>
-      <script src="../_static/sphinx_highlight.js"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -126,14 +126,14 @@
            <div itemprop="articleBody">
              
   <section id="gom-inspect-python-api-documentation">
-<h1>GOM Inspect Python API documentation<a class="headerlink" href="#gom-inspect-python-api-documentation" title="Permalink to this heading"></a></h1>
+<h1>GOM Inspect Python API documentation<a class="headerlink" href="#gom-inspect-python-api-documentation" title="Link to this heading"></a></h1>
 <p>Welcome to the GOM Inspect Python API documentation. Here you can find a detailed documentation of a subset of the Add-on programming specification. Please bear in mind, that recording commands with the script editor can be used to add new functions to your script.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>The now preliminary API is currently under heavy development and will change massively in the near future.</p>
 </div>
 <section id="image-processing">
-<h2>Image processing<a class="headerlink" href="#image-processing" title="Permalink to this heading"></a></h2>
+<h2>Image processing<a class="headerlink" href="#image-processing" title="Link to this heading"></a></h2>
 <p>Image related functions can be used to query images from the measurements of a project. This is not done directly, but via an ‘image acquisition’ object which acts as a proxy between the image storing data structured and the functions which can be used to process the image data.</p>
 <p>Terminology:</p>
 <ul class="simple">
@@ -141,10 +141,10 @@
 <li><p>‘pixel’: 2D coordinate in an image.</p></li>
 </ul>
 <section id="gom-api-project">
-<h3>gom.api.project<a class="headerlink" href="#gom-api-project" title="Permalink to this heading"></a></h3>
+<h3>gom.api.project<a class="headerlink" href="#gom-api-project" title="Link to this heading"></a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="gom.api.project.get_image_aquisition">
-<span class="sig-prename descclassname"><span class="pre">gom.api.project.</span></span><span class="sig-name descname"><span class="pre">get_image_aquisition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stages</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.project.get_image_aquisition" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">gom.api.project.</span></span><span class="sig-name descname"><span class="pre">get_image_aquisition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stages</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.project.get_image_aquisition" title="Link to this definition"></a></dt>
 <dd><p>Generate a list of image acquisition objects which can be used as input for image processing functions.</p>
 <dl class="myst field-list simple">
 <dt class="field-odd">API version<span class="colon">:</span></dt>
@@ -183,10 +183,10 @@
 </div>
 </section>
 <section id="gom-api-imaging">
-<h3>gom.api.imaging<a class="headerlink" href="#gom-api-imaging" title="Permalink to this heading"></a></h3>
+<h3>gom.api.imaging<a class="headerlink" href="#gom-api-imaging" title="Link to this heading"></a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="gom.api.imaging.compute_pixels_from_point">
-<span class="sig-prename descclassname"><span class="pre">gom.api.imaging.</span></span><span class="sig-name descname"><span class="pre">compute_pixels_from_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point_and_image_acquisition</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.imaging.compute_pixels_from_point" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">gom.api.imaging.</span></span><span class="sig-name descname"><span class="pre">compute_pixels_from_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point_and_image_acquisition</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.imaging.compute_pixels_from_point" title="Link to this definition"></a></dt>
 <dd><p>Compute pixel coordinates from point coordinates</p>
 <dl class="myst field-list simple">
 <dt class="field-odd">API version<span class="colon">:</span></dt>
@@ -222,7 +222,7 @@
 </div>
 <dl class="py function">
 <dt class="sig sig-object py" id="gom.api.imaging.compute_point_from_pixels">
-<span class="sig-prename descclassname"><span class="pre">gom.api.imaging.</span></span><span class="sig-name descname"><span class="pre">compute_point_from_pixels</span></span><span class="sig-paren">(</span><span class="optional">[</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">pixel_and_image</span> <span class="pre">acquisition</span></span></em>, <span class="optional">]</span><span class="optional">]</span><em class="sig-param"><span class="n"><span class="pre">use_calibration</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.imaging.compute_point_from_pixels" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">gom.api.imaging.</span></span><span class="sig-name descname"><span class="pre">compute_point_from_pixels</span></span><span class="sig-paren">(</span><span class="optional">[</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">pixel_and_image</span> <span class="pre">acquisition</span></span></em>, <span class="optional">]</span><span class="optional">]</span><em class="sig-param"><span class="n"><span class="pre">use_calibration</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.imaging.compute_point_from_pixels" title="Link to this definition"></a></dt>
 <dd><p>Compute point coordinate from pixel coordinates</p>
 <dl class="myst field-list simple">
 <dt class="field-odd">API version<span class="colon">:</span></dt>
@@ -259,7 +259,7 @@
 </div>
 <dl class="py function">
 <dt class="sig sig-object py" id="gom.api.imaging.compute_epipolar_line">
-<span class="sig-prename descclassname"><span class="pre">gom.api.imaging.</span></span><span class="sig-name descname"><span class="pre">compute_epipolar_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">image_acquisition_1,</span> <span class="pre">[pixel_and_image_acquisition]_2,</span> <span class="pre">max_distance</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.imaging.compute_epipolar_line" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">gom.api.imaging.</span></span><span class="sig-name descname"><span class="pre">compute_epipolar_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">image_acquisition_1,</span> <span class="pre">[pixel_and_image_acquisition]_2,</span> <span class="pre">max_distance</span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.imaging.compute_epipolar_line" title="Link to this definition"></a></dt>
 <dd><p>Compute epipolar line coordinates</p>
 <dl class="myst field-list simple">
 <dt class="field-odd">API version<span class="colon">:</span></dt>
@@ -298,13 +298,13 @@
 </section>
 </section>
 <section id="checks">
-<h2>Checks<a class="headerlink" href="#checks" title="Permalink to this heading"></a></h2>
+<h2>Checks<a class="headerlink" href="#checks" title="Link to this heading"></a></h2>
 <p>Functions used to handle checks.</p>
 <section id="gom-api-scripted-checks-util">
-<h3>gom.api.scripted_checks_util<a class="headerlink" href="#gom-api-scripted-checks-util" title="Permalink to this heading"></a></h3>
+<h3>gom.api.scripted_checks_util<a class="headerlink" href="#gom-api-scripted-checks-util" title="Link to this heading"></a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="gom.api.scripted_checks_util.is_scalar_checkable">
-<span class="sig-prename descclassname"><span class="pre">gom.api.scripted_checks_util.</span></span><span class="sig-name descname"><span class="pre">is_scalar_checkable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.scripted_checks_util.is_scalar_checkable" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">gom.api.scripted_checks_util.</span></span><span class="sig-name descname"><span class="pre">is_scalar_checkable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.scripted_checks_util.is_scalar_checkable" title="Link to this definition"></a></dt>
 <dd><p>Test if the referenced element is suitable for inspection with a scalar check.</p>
 <dl class="myst field-list simple">
 <dt class="field-odd">API version<span class="colon">:</span></dt>
@@ -332,7 +332,7 @@
 </div>
 <dl class="py function">
 <dt class="sig sig-object py" id="gom.api.scripted_checks_util.is_surface_checkable">
-<span class="sig-prename descclassname"><span class="pre">gom.api.scripted_checks_util.</span></span><span class="sig-name descname"><span class="pre">is_surface_checkable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.scripted_checks_util.is_surface_checkable" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">gom.api.scripted_checks_util.</span></span><span class="sig-name descname"><span class="pre">is_surface_checkable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.scripted_checks_util.is_surface_checkable" title="Link to this definition"></a></dt>
 <dd><p>Test if the referenced element is suitable for inspection with a surface check.</p>
 <dl class="myst field-list simple">
 <dt class="field-odd">API version<span class="colon">:</span></dt>
@@ -360,7 +360,7 @@
 </div>
 <dl class="py function">
 <dt class="sig sig-object py" id="gom.api.scripted_checks_util.is_curve_checkable">
-<span class="sig-prename descclassname"><span class="pre">gom.api.scripted_checks_util.</span></span><span class="sig-name descname"><span class="pre">is_curve_checkable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.scripted_checks_util.is_curve_checkable" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">gom.api.scripted_checks_util.</span></span><span class="sig-name descname"><span class="pre">is_curve_checkable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gom.api.scripted_checks_util.is_curve_checkable" title="Link to this definition"></a></dt>
 <dd><p>Test if the referenced element is suitable for inspection with a curve check.</p>
 <dl class="myst field-list simple">
 <dt class="field-odd">API version<span class="colon">:</span></dt>
@@ -412,7 +412,7 @@
   <div class="footer">
     <a href="https://www.gom.com/en/imprint" target="_blank" rel="noopener noreferrer">Imprint</a>
   </div>
-  <jinja2.runtime.BlockReference object at 0x7fb9d8eab220>
+  <jinja2.runtime.BlockReference object at 0x7f6029731ef0>
 
 
 </footer>
